@@ -92,7 +92,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			layer_on(1);
 		} else {
 			layer_off(1);
-			if (timer_elapsed(custom_lt_timer) < 100) {
+			if (timer_elapsed(custom_lt_timer) < 200) {
 				register_code(KC_LGUI);
 				unregister_code(KC_LGUI);
 			}
