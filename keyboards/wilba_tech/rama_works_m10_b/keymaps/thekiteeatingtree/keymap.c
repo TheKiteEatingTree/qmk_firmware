@@ -1,6 +1,6 @@
 #include QMK_KEYBOARD_H
 
-enum planck_layers {
+enum layers {
   _MAIN
 };
 
@@ -18,9 +18,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `---------------------
  */
 [_MAIN] = LAYOUT(
-    RESET, KC_1, KC_2,
-    KC_F2, KC_3, KC_4,
-    KC_DEL,KC_5, KC_6,
+    RESET, LGUI(KC_1), LGUI(KC_2),
+    KC_F2, LGUI(KC_3), LGUI(KC_4),
+    KC_DEL,LGUI(KC_5), LGUI(KC_0),
              KC_ENT
 )
 };
